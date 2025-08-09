@@ -1,0 +1,38 @@
+/* =============================
+   Estilos base – Tienda Online
+   Autor: Carlos Eduardo Hernández Lecointe – 1890-18-17646
+   ============================= */
+
+:root{
+  --bg: #f8f9fa;
+  --card-radius: .75rem;
+}
+
+/* Layout general */
+body{ background-color: var(--bg); }
+
+/* Navbar */
+.navbar-brand{ font-weight:700; }
+
+/* Carousel */
+.carousel-img{ height:340px; object-fit:cover; }
+
+/* Categorías */
+.category-title{ font-size:1rem; font-weight:600; letter-spacing:.2px; }
+.category-menu .list-group-item{ border:0; border-radius:.5rem; }
+.category-menu .list-group-item:hover{ background:#f1f3f5; }
+
+/* Cards de producto */
+.card{ border-radius: var(--card-radius); }
+.card-img-top{ height:180px; object-fit:cover; }
+
+/* Badge de carrito */
+.badge-cart{ transform: translate(40%, -40%); }
+
+/* Footer */
+footer{ background:#fff; border-top:1px solid rgba(0,0,0,.08); }
+
+/* Pequeñas mejoras responsivas */
+@media (max-width: 575.98px){
+  .carousel-img{ height: 220px; }
+}
